@@ -22,17 +22,7 @@ h1 {
     font-weight: normal;
 }
 
-h2 {
-    font-family: "fira";
-    font-weight: normal;
-}
-
-h3 {
-    font-family: "fira";
-    font-weight: normal;
-}
-
-h4 {
+h2, h3, h4{
     font-family: "fira";
     font-weight: normal;
 }
@@ -47,7 +37,7 @@ body a {
 /* All content */
 main, header, footer, nav {
     background-color: #FFFAFA;
-    width: 60%;
+    width: 1200px;
     z-index: 5;
 }
 
@@ -173,6 +163,13 @@ footer {
 }
 
 .iconimg:hover {color: #000000;}
+
+.projectimg {
+    float: left;
+    width: 200px;
+    object-fit: fill;
+    margin-right: 16px;
+}
 
 
 @font-face {
