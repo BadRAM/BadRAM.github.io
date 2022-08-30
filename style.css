@@ -71,7 +71,7 @@ footer {
 .splits {
     width: 100%;
     height: 100vh;
-    background-color: #333366;
+    /*background-color: #333366;*/
 /*    position: absolute;
     top: 0px;
     right: 0px;*/
@@ -82,18 +82,34 @@ footer {
     float:left;
     width: 50%;
     height: 100%;
+/*    opacity: 0.1;
+    transition: 0.5s;*/
 }
 
 
-.splitimg {
-    width:100%; 
-    height:100%; 
-    object-fit:cover;
-    opacity: 0.1;
+.splitcurtain
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    background-color: #333366;
+    opacity: 0.9;
     transition: 0.5s;
 }
 
-.splitimg:hover {opacity: 1}
+.splitcurtain:hover {opacity: 0}
+
+
+.splitimg {
+    float: left;
+    width:50%; 
+    height:50%; 
+    object-fit:cover;
+    z-index: 2;
+}
 
 
 .splitText {
@@ -106,6 +122,7 @@ footer {
     font-size: 25px;
     font-family: "fira", sans-serif;
     pointer-events: none; 
+    z-index: 6;
 }
 
 .section-header {
@@ -118,7 +135,7 @@ footer {
     top: 40%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 40%;
+    width: 760px;
     font-family: "fira-light", sans-serif;
     text-align: center;
     color: #FFFFFF;
