@@ -15,6 +15,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -30,14 +32,14 @@ h2, h3, h4{
 /* Links */
 body a {
     color: #9999F0;
-    font-weight: bold;
+/*    font-weight: bold;*/
     text-decoration: none;
 }
 
 /* All content */
-main, header, footer, nav {
+main, header, nav {
     background-color: #FFFAFA;
-    width: 1200px;
+    max-width: 1200px;
     z-index: 5;
 }
 
@@ -51,21 +53,32 @@ header {
 
 /* Main content */
 main {
-    display: flex;
-    flex-direction: row;
+    /*display: flex;*/
+    /*flex-direction: row;*/
     /*gap: 1em;*/
 }
 
 main section {
-    padding: 25px;
+    padding: 22px;
+/*    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 0px;
+    margin-right: 0px;*/
+    width: 100%;
+    box-sizing: border-box;
     flex: 2;
+    float: left;
 }
 
 /* Footer */
 footer {
-    background-color: inherit;
+    background-color: #333366;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .splits {
@@ -113,7 +126,7 @@ footer {
 
 
 .splitText {
-    color: #F0F0F0;
+    color: #FFFFFF;
     position: absolute;
     bottom: 10%;
     height: 40px;
@@ -183,9 +196,10 @@ footer {
 
 .projectimg {
     float: left;
-    width: 200px;
+    width: 300px;
     object-fit: fill;
-    margin-right: 16px;
+    margin: 16px;
+    border-radius: 4px;
 }
 
 
