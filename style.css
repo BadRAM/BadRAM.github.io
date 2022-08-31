@@ -138,6 +138,17 @@ footer {
     z-index: 6;
 }
 
+.split-arrow {
+    position: absolute;
+    bottom: 2%;
+    height: 50px;
+    width: 50%;
+    display: block;
+    object-fit: contain;
+    pointer-events: none; 
+    z-index: 6;
+}
+
 .section-header {
     text-align: center; 
     font-size: 42px;
